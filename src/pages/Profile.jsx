@@ -344,7 +344,12 @@ const Profile = ({ onLogout }) => {
                 </div>
                 <ChevronRight size={16} />
               </button>
-              <button className="btn-secondary" style={{ textAlign: 'left', display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: '#ef4444', borderColor: '#fee2e2' }} onClick={onLogout}>
+              <button className="btn-secondary" style={{ textAlign: 'left', display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: '#ef4444', borderColor: '#fee2e2' }} 
+                onClick={() => {
+                  api.logout();
+                  onLogout();
+                }}
+              >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <LogOut size={18} /> Hisobdan chiqish
                 </div>

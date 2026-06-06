@@ -13,12 +13,14 @@ import './App.css'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const user = api.getCurrentUser()
     if (user) {
       setIsAuthenticated(true)
     }
+    setLoading(false)
   }, [])
 
   const handleLogin = () => {
@@ -29,6 +31,8 @@ function App() {
     api.logout()
     setIsAuthenticated(false)
   }
+
+  if (loading) return null // Yoki loading spinner
 
   return (
     <Router>

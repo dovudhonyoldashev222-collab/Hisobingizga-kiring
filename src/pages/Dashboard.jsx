@@ -28,11 +28,11 @@ const Dashboard = () => {
 
   const totalIncome = api.getTransactions()
     .filter(t => t.type === 'income')
-    .reduce((sum, t) => sum + t.amount, 0);
+    .reduce((sum, t) => sum + Number(t.amount), 0);
 
   const totalExpense = Math.abs(api.getTransactions()
     .filter(t => t.type === 'expense')
-    .reduce((sum, t) => sum + t.amount, 0));
+    .reduce((sum, t) => sum + Number(t.amount), 0));
 
   return (
     <div className="main-content">
