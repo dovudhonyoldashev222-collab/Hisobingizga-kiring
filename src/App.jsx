@@ -16,9 +16,12 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    // Sessionni tekshirish uchun localStorage emas, api.getCurrentUser dan foydalanamiz
     const user = api.getCurrentUser()
     if (user) {
       setIsAuthenticated(true)
+    } else {
+      setIsAuthenticated(false)
     }
     setLoading(false)
   }, [])

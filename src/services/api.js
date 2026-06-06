@@ -70,6 +70,7 @@ export const api = {
     const storage = getStorage();
     storage.currentUser = null;
     saveStorage(storage);
+    localStorage.removeItem('is_auth'); // App.jsx dagi eski qoldiqlarni tozalash
   },
 
   getCurrentUser: () => {

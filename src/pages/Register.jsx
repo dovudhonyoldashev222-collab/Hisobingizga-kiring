@@ -20,9 +20,8 @@ const Register = ({ onRegister }) => {
       password: formData.password
     });
     if (result.success) {
-      api.login(formData.email, formData.password);
-      onRegister();
-      navigate('/');
+      alert("Ro'yxatdan o'tdingiz! Endi login orqali kiring.");
+      navigate('/login');
     } else {
       setError(result.error);
     }
