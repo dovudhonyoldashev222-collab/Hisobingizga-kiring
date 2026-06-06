@@ -1,4 +1,5 @@
 import Sidebar from './Sidebar';
+import BottomNav from './BottomNav';
 
 const Layout = ({ children, onLogout }) => {
   return (
@@ -7,6 +8,7 @@ const Layout = ({ children, onLogout }) => {
       <main className="content-container">
         {children}
       </main>
+      <BottomNav />
     </div>
   );
 };
