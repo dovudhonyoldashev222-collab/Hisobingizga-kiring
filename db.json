@@ -1,0 +1,148 @@
+{
+    "user": {
+        "name": "Dovud",
+        "email": "email@example.com",
+        "balance": 2760000,
+        "currency": "so'm"
+    },
+    "transactions": [
+        {
+            "id": 1,
+            "title": "Supermarket",
+            "category": "Ovqat",
+            "amount": -45000,
+            "date": "2026-05-15",
+            "type": "expense"
+        },
+        {
+            "id": 2,
+            "title": "Ish haqi",
+            "category": "Daromad",
+            "amount": 5000000,
+            "date": "2026-05-14",
+            "type": "income"
+        },
+        {
+            "id": 3,
+            "title": "Transport",
+            "category": "Transport",
+            "amount": -25000,
+            "date": "2026-05-14",
+            "type": "expense"
+        },
+        {
+            "id": 4,
+            "title": "Kafe",
+            "category": "Ovqat",
+            "amount": -60000,
+            "date": "2026-05-13",
+            "type": "expense"
+        },
+        {
+            "id": 5,
+            "title": "Kommunal",
+            "category": "To'lovlar",
+            "amount": -350000,
+            "date": "2026-05-12",
+            "type": "expense"
+        },
+        {
+            "id": 6,
+            "title": "Benzin",
+            "category": "Transport",
+            "amount": -120000,
+            "date": "2026-05-11",
+            "type": "expense"
+        },
+        {
+            "id": 7,
+            "title": "Restoran",
+            "category": "Ovqat",
+            "amount": -180000,
+            "date": "2026-05-10",
+            "type": "expense"
+        },
+        {
+            "id": 8,
+            "title": "Internet",
+            "category": "To'lovlar",
+            "amount": -100000,
+            "date": "2026-05-09",
+            "type": "expense"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Ovqat",
+            "icon": "Utensils",
+            "color": "#3b82f6",
+            "amount": 850000,
+            "percentage": 25.2,
+            "count": 24
+        },
+        {
+            "id": 2,
+            "name": "Transport",
+            "icon": "Car",
+            "color": "#10b981",
+            "amount": 420000,
+            "percentage": 12.5,
+            "count": 15
+        },
+        {
+            "id": 3,
+            "name": "To'lovlar",
+            "icon": "Home",
+            "color": "#f59e0b",
+            "amount": 650000,
+            "percentage": 19.3,
+            "count": 8
+        },
+        {
+            "id": 4,
+            "name": "O'yin-kulgi",
+            "icon": "Gamepad2",
+            "color": "#8b5cf6",
+            "amount": 320000,
+            "percentage": 9.5,
+            "count": 12
+        },
+        {
+            "id": 5,
+            "name": "Kafe",
+            "icon": "Coffee",
+            "color": "#ec4899",
+            "amount": 280000,
+            "percentage": 8.3,
+            "count": 18
+        },
+        {
+            "id": 6,
+            "name": "Salomatlik",
+            "icon": "Heart",
+            "color": "#ef4444",
+            "amount": 450000,
+            "percentage": 13.4,
+            "count": 6
+        },
+        {
+            "id": 7,
+            "name": "Ish",
+            "icon": "Briefcase",
+            "color": "#6366f1",
+            "amount": 180000,
+            "percentage": 5.3,
+            "count": 9
+        },
+        {
+            "id": 8,
+            "name": "Sovg'alar",
+            "icon": "Gift",
+            "color": "#facc15",
+            "amount": 220000,
+            "percentage": 6.5,
+            "count": 7
+        }
+    ]
+}
